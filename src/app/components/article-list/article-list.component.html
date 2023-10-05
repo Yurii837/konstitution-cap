@@ -1,0 +1,9 @@
+<div class="number-list">
+    <ng-container *ngFor="let art of konstService.articles">
+        <span>{{art.number}}</span>
+        <span>{{art.name}}</span>
+        <span *ngIf="art.fav">FAV</span>
+        <div>{{art.text}}</div>
+    </ng-container>
+</div>
+
