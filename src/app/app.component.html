@@ -3,14 +3,23 @@
     <div class="header__selector">
       <div class="select-btn">
         <button mat-mini-fab color="primary" aria-label="Example icon button with a menu icon">
-          <mat-icon>plus_one</mat-icon>
-        </button>
+          <mat-icon>more_vert</mat-icon>
+        </button>      
       </div>
       <app-article-list></app-article-list>
     </div>
-    <div class="header__search"></div>
-    <div class="header__bookmarks"></div>
-    <div class="header__menu"></div>
+    <div class="header__search">
+      <mat-form-field class="example-full-width">
+        <mat-label>Favorite food</mat-label>
+        <input matInput placeholder="Ex. Pizza" value="Sushi">
+      </mat-form-field>
+    </div>
+    <div class="header__bookmarks">
+      <app-expansion-list></app-expansion-list>
+    </div>
+    <div class="header__menu">
+      
+    </div>
   </div>
 
   <div class="main">

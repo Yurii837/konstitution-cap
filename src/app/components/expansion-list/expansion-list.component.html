@@ -1,0 +1,22 @@
+<div class="number-list">
+    <!-- <ng-container *ngFor="let art of konstService.konstArr">
+        <span>{{art.section}}</span>
+        <span>{{art.name}}</span>
+        <span *ngIf="art.fav">FAV</span>
+        <div>{{art.text}}</div>
+    </ng-container> -->
+    <mat-accordion *ngFor="let section of konstService.konstArr" multi="true">
+      <h4>{{section.section}}</h4>
+      <mat-expansion-panel *ngFor="let article of section.articles" (opened)="f()" [hideToggle]="true">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <h3>{{article.name}}</h3>
+          </mat-panel-title>
+          <mat-panel-description>Початок статті....</mat-panel-description>
+        </mat-expansion-panel-header>
+          <div class="event" >
+            <h5>{{article.text}}</h5>
+          </div>
+      </mat-expansion-panel>
+    </mat-accordion>
+</div>

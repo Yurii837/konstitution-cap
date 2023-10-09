@@ -8,8 +8,6 @@ import { KonstService } from 'src/app/services/konst.service';
 })
 export class ArticleListComponent {
 
-  constructor(
-    public konstService: KonstService
-  ) {}
+ 
 }
 

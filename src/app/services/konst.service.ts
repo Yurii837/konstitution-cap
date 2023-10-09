@@ -7,30 +7,64 @@ export class KonstService {
 
   constructor() { }
 
-  public articles = [
+  public konstArr = [
     {
-      number: 1,
-      name: 'A',
-      text: '111',
-      fav: false
+      section: 'Преамбула',
+      articles: [
+        {
+          number: 1,
+          name: 'Ст1',
+          text: 'Текст1',
+          fav: false
+        },
+        {
+          number: 2,
+          name: 'Ст2',
+          text: '22Текст2',
+          fav: false
+        },
+        {
+          number: 3,
+          name: 'Ст3',
+          text: 'Текст3',
+          fav: false
+        },
+        {
+          number: 4,
+          name: 'Ст4',
+          text: 'Текст4',
+          fav: false
+        },
+      ]
     },
     {
-      number: 2,
-      name: 'B',
-      text: '222',
-      fav: false
-    },
-    {
-      number: 3,
-      name: 'C',
-      text: '333',
-      fav: false
-    },
-    {
-      number: 4,
-      name: 'D',
-      text: '444',
-      fav: false
-    },
+      section: 'Розділ 2',
+      articles: [
+        {
+          number: 5,
+          name: 'Ст5',
+          text: 'Текст5',
+          fav: false
+        },
+        {
+          number: 2,
+          name: 'Ст6',
+          text: 'Текст6',
+          fav: false
+        },
+        {
+          number: 3,
+          name: 'Cт7',
+          text: 'Текст7',
+          fav: false
+        },
+        {
+          number: 4,
+          name: 'Ст8',
+          text: 'Текст8',
+          fav: false
+        },
+      ]
+    }
   ]
 }
